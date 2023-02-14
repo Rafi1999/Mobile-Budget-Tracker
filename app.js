@@ -1,38 +1,38 @@
-// calculate kitkat chocolate price with quantity
+// calculate realme chocolate price with quantity
 // document
-//   .getElementById("kitkat-buy-btn")
+//   .getElementById("realme-buy-btn")
 //   .addEventListener("click", function () {
-//     const kitkatCost = multiplePriceWithQuantity("kitkat-quantity", 200);
-//     setInnerText("chocolate", kitkatCost);
-//     document.getElementById("kitkat-quantity").value = "";
+//     const realmeCost = multiplePriceWithQuantity("realme-quantity", 200);
+//     setInnerText("chocolate", realmeCost);
+//     document.getElementById("realme-quantity").value = "";
 //     total();
 //   });
 
-function handleKitkat() {
-  const kitkatCost = multiplePriceWithQuantity("kitkat-quantity", 200);
-  setInnerText("chocolate", kitkatCost);
-  document.getElementById("kitkat-quantity").value = "";
+function handlerealme() {
+  const realmeCost = multiplePriceWithQuantity("realme-quantity", 20000);
+  setInnerText("realme", realmeCost);
+  document.getElementById("realme-quantity").value = "";
   total();
 }
 // calculate rose  price with quantity
-document.getElementById("rose-buy-btn").addEventListener("click", function () {
-  const roseCost = multiplePriceWithQuantity("rose-quantity", 100);
-  setInnerText("rose", roseCost);
-  document.getElementById("rose-quantity").value = "";
+document.getElementById("poco-buy-btn").addEventListener("click", function () {
+  const pocoCost = multiplePriceWithQuantity("poco-quantity", 25000);
+  setInnerText("poco", pocoCost);
+  document.getElementById("poco-quantity").value = "";
   total();
 });
 // calculate diary  price with quantity
-document.getElementById("diary-buy-btn").addEventListener("click", function () {
-  const diaryCost = multiplePriceWithQuantity("diary-quantity", 500);
-  setInnerText("diary", diaryCost);
-  document.getElementById("diary-quantity").value = "";
+document.getElementById("iqo-buy-btn").addEventListener("click", function () {
+  const iqoCost = multiplePriceWithQuantity("iqo-quantity", 30000);
+  setInnerText("iqo", iqoCost);
+  document.getElementById("iqo-quantity").value = "";
   total();
 });
 function total(params) {
-  const chocolate = stringToNumberConverter("chocolate");
-  const rose = stringToNumberConverter("rose");
-  const diary = stringToNumberConverter("diary");
-  const total = chocolate + rose + diary;
+  const realme = stringToNumberConverter("realme");
+  const poco = stringToNumberConverter("poco");
+  const iqo = stringToNumberConverter("iqo");
+  const total = realme + poco + iqo;
   setInnerText("total", total);
 }
 // pass the id of the tag this function will convert just innertext to number
